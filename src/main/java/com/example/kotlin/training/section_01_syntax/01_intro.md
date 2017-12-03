@@ -1,6 +1,5 @@
 # Basic syntax
 
-
 ## Hello Kotlin
 ```kotlin
 fun main(args: Array<String>) {
