@@ -21,3 +21,4 @@ Michał Moczulski
 * [Kotlin Conf app repository - Github](https://github.com/JetBrains/kotlinconf-app) 
 * [Kotlin Conf 2017 Videos](https://www.youtube.com/watch?v=spFtUgL32yA&list=PLQ176FUIyIUY6UK1cgVsbdPYA3X5WLam5) 
 * ["Kotlin in Action" (1st edition)](https://www.amazon.com/Kotlin-Action-Dmitry-Jemerov/dp/1617293296)
+* [Kotlin Weekly newsletter](http://www.kotlinweekly.net/)
