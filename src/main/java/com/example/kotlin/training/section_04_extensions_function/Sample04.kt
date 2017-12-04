@@ -8,7 +8,6 @@ fun Int.daysAgo(): Long {
     val localDateTime = now.minusDays(this.toLong())
     return localDateTime.toInstant(ZoneOffset.UTC).toEpochMilli()
 }
-// usage is 5.daysAgo()
 
 fun usage() {
     val milliseconds = 5.daysAgo()
