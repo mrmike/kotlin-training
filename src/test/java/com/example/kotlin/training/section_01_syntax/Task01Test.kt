@@ -4,7 +4,7 @@ import junit.framework.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 
-class TodoTask01Test {
+class Task01Test {
 
     lateinit var task01: Task01
 

@@ -38,7 +38,7 @@ fun dayOfWeek(day: Int): String {
 
 ```kotlin
 val langs = listOf("Java", "Kotlin", "Javascript") // Java's List<String>
-langs.add("Go") // ERROR - immutable error
+langs.add("Go") // compile error - immutable list
 ```
 * Implicit `List<String>` type 
 * By default list is immutable
@@ -50,7 +50,7 @@ langs.add("Go") // OK
 * Use `mutableList(Set/Map)Of` to create mutable collection
 
 ## Nullability in collections
-* Be careful where you put `?`
+* Be careful where you put nullable type - `?`
 ```kotlin
 val list: List<String> // non-nullable list of non-nullable values
 val list: List<String?> // non-nullable list of nullable values
@@ -64,6 +64,7 @@ fun map(items: List<String>): String {
     return items
             .filter { it.length > 10 }
             .map { item -> item.toUpperCase() }
+            .map(String::toLowerCase)
             .first()
 }
 ```

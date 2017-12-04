@@ -2,9 +2,10 @@ package com.example.kotlin.training.section_03_flow_control
 
 fun len(input: Any) {
     if (input is String) {
-        println(input.length) // calling String's method
+        println(input.length) // smart cast - calling String's method
     } else {
-        print
+        println("...")
+        val mutableListOf: MutableList<String> = mutableListOf("123")
     }
 }
 
@@ -17,4 +18,12 @@ fun dayOfWeek(day: Int): String {
         4 -> "Friday"
         else -> "Weekend"
     }
+}
+
+fun map(items: List<String>): String {
+    return items
+            .filter { it.length > 10 }
+            .map { item -> item.toUpperCase() }
+            .map(String::toLowerCase)
+            .first()
 }
