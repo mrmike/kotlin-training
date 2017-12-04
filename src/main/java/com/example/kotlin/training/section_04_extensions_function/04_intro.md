@@ -15,6 +15,5 @@ fun Int.daysAgo(): Long {
 * Function does not have access to object internal state
 * Extension function can be defined on nullable type `e.g. Int?`
 ```kotlin
-// usage
 val millis = 10.daysAgo() 
 ```
