@@ -15,7 +15,6 @@ fun len(input: Any) {
 }
 ```
 * Any is like Java Object
-* 
 * Smart cast
 
 ## When 
