@@ -18,6 +18,6 @@ class Task04Test {
     fun `should return even numbers`() {
         val evenNumbers = listOf(1, 2, 3, 4, 5).evenNumbers()
 
-        assertEquals(listOf(1, 3, 5), evenNumbers)
+        assertEquals(listOf(2, 4), evenNumbers)
     }
 }
