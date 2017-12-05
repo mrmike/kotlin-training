@@ -1,26 +1,33 @@
 package com.example.kotlin.training.section_05_class;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 public class PersonJava {
 
+    @Nullable
     private final String firstName;
+    @NotNull
     private final String lastName;
-    private final int age;
+    private final Integer age;
 
-    public PersonJava(String firstName, String lastName, int age) {
+    public PersonJava(@Nullable String firstName, @NotNull String lastName, Integer age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
     }
 
+    @Nullable
     public String getFirstName() {
         return firstName;
     }
 
+    @NotNull
     public String getLastName() {
         return lastName;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
@@ -31,16 +38,16 @@ public class PersonJava {
 
         PersonJava that = (PersonJava) o;
 
-        if (age != that.age) return false;
         if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
-        return lastName != null ? lastName.equals(that.lastName) : that.lastName == null;
+        if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
+        return age != null ? age.equals(that.age) : that.age == null;
     }
 
     @Override
     public int hashCode() {
         int result = firstName != null ? firstName.hashCode() : 0;
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
-        result = 31 * result + age;
+        result = 31 * result + (age != null ? age.hashCode() : 0);
         return result;
     }
 
