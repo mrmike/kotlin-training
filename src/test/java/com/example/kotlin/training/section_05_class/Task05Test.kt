@@ -1,6 +1,6 @@
 package com.example.kotlin.training.section_05_class
 
-import junit.framework.Assert.assertEquals
+import org.junit.Assert.*
 import org.junit.Test
 
 class Task05Test {

@@ -1,6 +1,6 @@
 package com.example.kotlin.training.section_03_flow_control
 
-import junit.framework.Assert.assertEquals
+import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 

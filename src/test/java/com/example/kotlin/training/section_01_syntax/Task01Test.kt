@@ -1,6 +1,6 @@
 package com.example.kotlin.training.section_01_syntax
 
-import junit.framework.Assert.assertEquals
+import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 
